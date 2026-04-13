@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* 整個網頁可見部分 */
+body{
+    background-color: rgb(249, 247, 243);
+    color: rgb(65, 39, 24);
+    font-size: 16px;
+    font-family: 'arial','Hiragino Sans','Meiryo',sans-serif;
+}
+
+/* 頂部介紹區 */
+header{
+    width: 1240px;
+    margin: 0 auto 44px;
+    background-color: rgb(249, 247, 243);
+}
+h1 {
+  text-align: center;
+  padding: 0px;
+}
+
+/* 頂端連結區 */
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px 0px 10px; 
+    background-color: rgb(252, 251, 248);
+    border-top: 2px solid rgb(118, 102, 84);
+    border-bottom: 2px solid rgb(118, 102, 84);
+}
+header nav ul li {
+    margin: 0 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(122, 99, 80); 
+}
+header nav ul li a:hover{
+    text-decoration: underline double 2px;
+}
+
+
+
+main{
+    width: 1100px;
+    margin: 0 auto 50px;
+    background-color: rgb(255, 254, 253);
+    padding:  22px 72px 32px 72px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.16);
+}
+
+
+article section p {
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+article section {
+    margin-bottom: 50px;
+}
+footer {
+    background-color: #523f2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+    list-style: none;
+}
+
