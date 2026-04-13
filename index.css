@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Iansui-Regular';
+    /* 請確保 fonts/ 後面的檔名與你左側資料夾內的一模一樣 */
+    src: url('./fonts/Iansui-Regular.ttf') format('truetype');
+}
+
+/* 整個網頁可見部分 */
+body{
+    background-color: rgb(249, 247, 243);
+    color: rgb(65, 39, 24);
+    font-family: 'Iansui-Regular', sans-serif;
+}
+
+/* 頂部介紹區 */
+header{
+    width: 1240px;
+    margin: 0 auto 44px;
+    background-color: rgb(249, 247, 243);
+}
+
+h1 {
+  text-align: center;
+  padding: 0px;
+  font-size: 36px;
+}
+h3{
+    font-size: 38px;
+}
+p{
+    font-size: 26px;
+}
+
+/*  頂端連結區 */ 
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px 0px 10px; 
+    background-color: rgb(252, 251, 248);
+    border-top: 2px solid rgb(118, 102, 84);
+    border-bottom: 2px solid rgb(118, 102, 84);
+}
+header nav ul li {
+    margin: 0 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(122, 99, 80); 
+}
+header nav ul li a:hover{
+    text-decoration: underline double 2px;
+}
+
+
+
+
+/* 父層 */
+.container{
+    display: flex;
+    width: 1240px;
+    margin: 0 auto 50px;
+    justify-content: space-between;
+}
+/* 子層(左) */
+main{
+    /* flex: 60%; */
+    flex-basis: 920px;
+    background-color: rgb(255, 254, 253);
+    padding:  22px 72px 32px 72px;
+    margin-right: 20PX;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.16);
+}
+
+
+/* 子層(右) */
+aside{
+    /* flex: 40%; */
+    flex-basis: 284px;
+}
+/* 子層(右)連結區 */
+aside nav{
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+aside nav h2 {
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(122, 99, 80); 
+}
+aside nav ul {
+    font-size: 14px;
+}
+
+
+.categorynav ul li {
+    list-style-type: square;
+    color:rgb(122, 99, 80);  
+    margin: 0 0 16px 20px;
+    list-style: none;
+}
+.categorynav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(122, 99, 80);  
+}
+
+.categorynav ul li a:hover{
+    font-size: 16px;
+    color: rgb(150, 134, 122);  
+}
+.recentnav ul li {
+    border-bottom: 1px solid rgb(122, 99, 80);  
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    list-style: none;
+}
+.recentnav ul {
+    height: 240px;
+    overflow: hidden scroll;
+}
+.recentnav ul li{
+    list-style: none;
+    color: rgb(122, 99, 80);  
+}
+.recentnav ul li a{
+    color: rgb(122, 99, 80);  
+    text-decoration: none;
+    font-size: 16px;
+}
+
+article h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px;
+} 
+time {
+    background-color: #999583;
+    border-radius: 0px 22px 22px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 13px 25px 12px 20px;
+    display: inline-block;
+}
+.postdate {
+    margin-bottom: 26px;
+}
+.eyecatch {
+    margin-bottom: 26px;
+}
+article h3 {
+    border-bottom: 2px solid #766c68;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+     background-image: url(9.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 20px 10px 10px 48px;
+}
+article section p {
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+article section {
+    margin-bottom: 50px;
+}
+footer {
+    background-color: #523f2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+    list-style: none;
+}
+
+
+.hover-img {
+  content: url("1226.png");
+}
+
+.hover-img:hover {
+  content: url("1227.png");
+}
+
+.hover-img:active {
+  content: url("1228.png");
+}

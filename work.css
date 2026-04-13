@@ -1,5 +1,18 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Iansui-Regular';
+    /* 請確保 fonts/ 後面的檔名與你左側資料夾內的一模一樣 */
+    src: url('./fonts/Iansui-Regular.ttf') format('truetype');
+}
+
+/* 整個網頁可見部分 */
+body{
+    background-color: rgb(249, 247, 243);
+    color: rgb(65, 39, 24);
+    font-family: 'Iansui-Regular', sans-serif;
+}
+
 /* 整個網頁可見部分 */
 body{
     background-color: rgb(249, 247, 243);
