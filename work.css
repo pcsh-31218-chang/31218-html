@@ -71,11 +71,30 @@ footer {
     text-align: center;
     padding: 14px 10px 20px;
 }
+footer p {
+    font-size: 16px;
+}
 img {
     max-width: 80%;
     height: auto;
 }
 a{
     list-style: none;
+}
+
+
+.btn{
+    display:inline-block;
+    padding:10px 22px;
+    background:#8c7b68;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#6f5f4e;
 }
 
