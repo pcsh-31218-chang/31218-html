@@ -6,95 +6,177 @@
 }
 
 /* 整個網頁可見部分 */
-body{
+body {
     background-color: rgb(249, 247, 243);
     color: rgb(65, 39, 24);
     font-size: 22px;
     font-family: 'Iansui-Regular', sans-serif;
 }
+
 /* 頂部介紹區 */
-header{
+header {
     width: 1240px;
     margin: 0 auto 44px;
     background-color: rgb(249, 247, 243);
 }
+
 h1 {
-  text-align: center;
-  padding: 0px;
+    text-align: center;
+    padding: 0px;
 }
-    
+
 /* 頂端連結區 */
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 12px 0px 10px; 
+    padding: 12px 0px 10px;
     background-color: rgb(252, 251, 248);
     border-top: 2px solid rgb(118, 102, 84);
     border-bottom: 2px solid rgb(118, 102, 84);
 }
+
 header nav ul li {
     margin: 0 20px;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    color: rgb(122, 99, 80); 
+    color: rgb(122, 99, 80);
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     text-decoration: underline double 2px;
 }
 
-
-
-main{
+/* 主要內容區 */
+main {
     width: 1100px;
     margin: 0 auto 50px;
     background-color: rgb(255, 254, 253);
-    padding:  22px 72px 32px 72px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.16);
+    padding: 22px 72px 48px 72px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
 }
 
+/* 各作品區塊 */
+section {
+    margin-bottom: 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed rgb(200, 190, 178);
+}
 
-article section p {
-    line-height: 1.6;
-    margin-bottom: 26px;
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 32px;
 }
-article section {
-    margin-bottom: 50px;
+
+/* 作品類別標題 */
+section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(90, 67, 48);
+    padding: 16px 10px 12px 48px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #766c68;
+    background-image: url(9.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
+
+/* 段落文字 */
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: rgb(80, 57, 38);
+}
+
+/* 圖片區塊 */
+.eyecatch {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.eyecatch img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eyecatch img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* AI 繪圖 2x2 格狀排列 */
+.ai-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+.ai-grid .eyecatch {
+    margin-bottom: 0;
+}
+
+.ai-grid .eyecatch img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-grid .eyecatch img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* 按鈕區 */
+.btn-area {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #8c7b68;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6f5f4e;
+}
+
+/* 底部 */
 footer {
     background-color: #523f2e;
     color: #ffffff;
     text-align: center;
     padding: 14px 10px 20px;
 }
+
 footer p {
     font-size: 16px;
 }
+
 img {
     max-width: 80%;
     height: auto;
 }
-a{
+
+a {
     list-style: none;
 }
-
-
-.btn{
-    display:inline-block;
-    padding:10px 22px;
-    background:#8c7b68;
-    color:white;
-    text-decoration:none;
-    border-radius:20px;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#6f5f4e;
-}
-

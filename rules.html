@@ -3,48 +3,91 @@
     <!-- 網頁不可見處 -->
     <head>
         <meta charset="UTF-8">
-        <!--上面是為了避免中文造成的亂碼 meta是單標籤 -->    
         <title>張硯涵的作品展</title>
-        <link rel="stylesheet" href="rules.css".css">
+        <link rel="stylesheet" href="rules.css">
     </head>
 
     <!-- 網頁可見處 -->
     <body>
         <!-- 頂部空間 -->
         <header>
-            <h1><img src="8.png"  alt="作品展" height="150" width="260"></h1>
+            <h1><img src="8.png" alt="作品展" height="150" width="260"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="rules.html">RULES</a></li>
+                    <li><a href="rules.html">JOURNAL</a></li>
                     <li><a href="https://www.instagram.com/pccac.80th?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">CLUB</a></li>
                     <li><a href="work.html">WORK</a></li>
                 </ul>
             </nav>
         </header>
+
         <!-- 主要畫面 -->
-        <div class="container">
-            <!-- 左側主要畫面 -->
-            <main>
-                <article>
-                    <h2>高中三年的作品展</h2>
-                    <p class="postdate">
-                        <time datetime="2026-01-30">2026年01月30日</time>
-                    </p>
-                    <p class="eyecatch">    
-                        <img src="123.jpg" alt="社團合照">
-                    </p>
-                </article>
-                <nav class="btn-area">
-                    <a href="index.html" class="btn">回到首頁</a>
-                </nav>
-            </main>
-        </div>
+        <main>
+            <article>
+                <h2>自學架設 HTML 網站學習歷程</h2>
+                <p class="postdate">
+                    <time datetime="2026-01-30">2026年04月12日</time>
+                </p>
+
+                <!-- 動機與目標 -->
+                <section>
+                    <h3>動機與目標</h3>
+                    <p>從 (Digital 2025 Taiwan) 報告指出，台灣民眾平均每日上網時間為 7 小時 23 分鐘，其中包含使用社群媒體、抖音平台，影片類以及各個商業軟體服務。於此，我想嘗試動手製作網頁設計，設計屬於我的個人作品集展示平台，並且藉此學習 HTML 的基礎知識。最後成果目標希望可以在 YouTube 影片教學的輔助下，自行用 HTML 和 CSS 整理自我的作品集，美術手作紀錄平台，並且順利完成部署到網路上。</p>
+                </section>
+
+                <!-- 練習過程與問題解決 -->
+                <section>
+                    <h3>練習過程與問題解決</h3>
+
+                    <div class="sub-section">
+                        <h4>第一階段：初步學習與筆記整理</h4>
+                        <p>那時，我透過觀看網路上的教學影片學習，由此我開始了解到自我學習的挑戰，在第二次嘗試看影片的時候，我看了看 AI 工具，發現 AI 可以幫助我提升學習的效果。我選擇看 AI 建議後，我最後選擇看 YouTube 上面的系列影片教學，用以理解 HTML 的基礎概念與架構，了解網站世界的初步認識和 AI 整合搜尋，以便快速解決偶爾遇到的困難。</p>
+                        <p class="solution-label">解決辦法：在下方旁邊打開一個小視窗放影片，一邊看影片，一邊打開記事本 / 計算機，跟著網站世界的初階影片和 AI 整合搜尋，以便快速解決偶爾遇到的困難。</p>
+                        <p>另外，剛開始學習的方式時候，我發現需要文字稿就很難解決標準的問題，我嘗試透過找到各種相關文字稿，整合成為了我所需要的。</p>
+                        <p class="solution-label">另外解辦法：我在下方空白處，一邊根據的影片的說明寫下筆記，做一個整理，補充說明文字，幫助之後能夠快速的回去找到想要找到的資料和訊息以及樣式。</p>
+                    </div>
+
+                    <div class="sub-section">
+                        <h4>第二階段：視覺呈現與細節處理</h4>
+                        <p>在進行初步排版，我遇到了幾個主要問題：</p>
+                        <ol>
+                            <li><strong>圖片縮放問題</strong>：我以為是某些特定法決問題，繞過去了解圖片成了不少時間，找到並解決了怎麼知道圖片正確的縮放。為了解決這個問題，我加入了「圖片」元素，在原本的 CSS 框架內不知道的地方已經解決了，但找到了怎麼「補充圖片元素」找到解決問題。</li>
+                            <li><strong>整體縮放清晰高</strong>：我在網頁整體看的時候，我發現畫面縮放清晰度不高，不知道怎麼辦，最後我找到了「overflow-y: auto」和「overflow-x」來解決那個問題。</li>
+                        </ol>
+                        <p class="solution-label">解決辦法：在 CSS 使用不熟悉但日後看回來 13 年 10 月出版的自學合幸已經是最正確的自我說明標準，我現在依照的是最正確的自我說明技術解決，以便快速解決大量的學習問題：</p>
+                        <p><code>&lt;header&gt; &lt;section&gt; &lt;article&gt; &lt;footer&gt;</code> 等語意標籤，並使用 Class 和 ID 分別選擇各元素展示了。</p>
+                    </div>
+
+                    <div class="sub-section">
+                        <h4>第三階段：網站部署與網頁整理</h4>
+                        <p>在製作網頁的部分，我遇到了不少因為版面比某些比更好看的問題，也因此我遇到了大量的小技巧問題。在這段期間，我嘗試大量不同的辦法，最後我發現元素最大比更好看用 margin 的設定，最後找到了比更好看用 margin 標準解決，以便快速清楚說明的。</p>
+                        <p>另外，我學習了 VSCode 的 GitHub 整合功能（引入架設方便），幫助成功 Git 更新站點上傳在 GitHub Pages 上行部署。</p>
+                    </div>
+                </section>
+
+                <!-- 心得感想 -->
+                <section>
+                    <h3>心得感想</h3>
+                    <p>在這次自學網頁的過程中，我深深的體悟到的是最能夠做到最完整的差異是最大的。平常用 HTML 後，我剛開始接觸 HTML 的時候，剛開始的我是不知道自己要怎麼辦的，在學習的基礎設定是沒有 margin 設定基礎的，一邊看，一邊嘗試才能夠完整的了解到 HTML 的完整的功能，並且了解到不同的文字之間差異的功能，都分別有不同功能的特色，整個 HTML 的版面架設也是，都一一分別有各自的主頁可以區分的功能，以文字區別各自不同的標籤格式，樣式最終可以做到 flow 自我修改的。</p>
+                    <p>在這次 AI 的輔助學習的之中，我發現到類似 CSS 的標準，我找到了我的學習基礎是要讓整個設計用樣式去做自己希望的控制，最後讓整個自我修改的方向以及找到了文字定義是要讓 AI 完整辨識一個關鍵問題的。</p>
+                    <p>在這次 AI 輔助學習的之中，我以此去完成了最終的測試的問題，最後也通過了完整的測試，幫助我完整找到了學習解決了一個一個學習目標，最後的地方以此解決的是最後整個學習架設一個可以展示的作品網站，以此解決了最後完整的測試以及一個說明樣式。</p>
+
+            </article>
+            <!-- 按鈕 -->
+            <nav class="btn-area">
+                <a href="index.html" class="btn">回到首頁</a>
+            </nav>
+        </main>
+        
+
         <!-- 底下商標 -->
         <footer>
             <p>
                 <small>Font Credits: 本站字型基於 Fontworks Klee 開源專案（商標屬原作者所有），並依 SIL OFL 1.1 協議授權使用。</small>
             </p>
         </footer>
+        
+            
     </body>
 </html>

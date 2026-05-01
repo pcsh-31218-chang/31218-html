@@ -1,88 +1,195 @@
 @charset "utf-8";
 
-
 @font-face {
     font-family: 'Iansui-Regular';
     src: url('./fonts/Iansui-Regular.ttf') format('truetype');
 }
 
 /* 整個網頁可見部分 */
-body{
+body {
     background-color: rgb(249, 247, 243);
     color: rgb(65, 39, 24);
     font-family: 'Iansui-Regular', sans-serif;
 }
+
 /* 頂部介紹區 */
-header{
+header {
     width: 1240px;
     margin: 0 auto 44px;
     background-color: rgb(249, 247, 243);
 }
+
 h1 {
-  text-align: center;
-  padding: 0px;
+    text-align: center;
+    padding: 0px;
 }
 
 /* 頂端連結區 */
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 12px 0px 10px; 
+    padding: 12px 0px 10px;
     background-color: rgb(252, 251, 248);
     border-top: 2px solid rgb(118, 102, 84);
     border-bottom: 2px solid rgb(118, 102, 84);
 }
+
 header nav ul li {
     margin: 0 20px;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    color: rgb(122, 99, 80); 
+    color: rgb(122, 99, 80);
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     text-decoration: underline double 2px;
 }
 
-
-
-main{
+/* 主要內容區 */
+main {
     width: 1100px;
     margin: 0 auto 50px;
     background-color: rgb(255, 254, 253);
-    padding:  22px 72px 32px 72px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.16);
+    padding: 22px 72px 32px 72px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
 }
 
-
-article section p {
-    line-height: 1.6;
-    margin-bottom: 24px;
+/* 文章標題 */
+article h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
+
+/* 日期標籤 */
+time {
+    background-color: #999583;
+    border-radius: 0px 22px 22px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 13px 25px 12px 20px;
+    display: inline-block;
+}
+
+.postdate {
+    margin-bottom: 32px;
+}
+
+/* section 標題 h3 */
+article section h3 {
+    border-bottom: 2px solid #766c68;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    background-image: url(9.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 20px 10px 10px 48px;
+}
+
+/* section 整體間距 */
 article section {
     margin-bottom: 50px;
 }
+
+/* 子段落區塊 */
+.sub-section {
+    margin-bottom: 36px;
+    padding-left: 8px;
+}
+
+/* h4 小標題 */
+.sub-section h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(100, 78, 60);
+    margin-bottom: 12px;
+    padding-left: 12px;
+    border-left: 4px solid rgb(153, 149, 131);
+}
+
+/* 一般段落 */
+article section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* 解決辦法提示文字 */
+.solution-label {
+    background-color: rgb(245, 242, 236);
+    border-left: 4px solid rgb(153, 138, 116);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 18px;
+    font-size: 17px;
+    color: rgb(90, 67, 48);
+    margin-bottom: 16px;
+}
+
+/* 有序清單 */
+article section ol {
+    padding-left: 28px;
+    margin-bottom: 16px;
+}
+
+article section ol li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* 程式碼行內樣式 */
+code {
+    background-color: rgb(238, 234, 225);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: monospace;
+    font-size: 16px;
+    color: rgb(90, 67, 48);
+}
+
+/* 超連結 */
+article a {
+    color: rgb(122, 99, 80);
+    text-decoration: underline;
+}
+
+article a:hover {
+    color: rgb(90, 67, 48);
+}
+
+/* 底部 */
 footer {
     background-color: #523f2e;
     color: #ffffff;
     text-align: center;
     padding: 14px 10px 20px;
 }
+
 footer p {
     font-size: 16px;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
-a{
-    list-style: none;
+
+
+/* ===== 按鈕區 ===== */
+.btn-area{
+    text-align: left;
+    margin-top: 30px;
 }
 
-
+/* ===== 按鈕 ===== */
 .btn{
     display:inline-block;
     padding:10px 22px;
@@ -97,4 +204,3 @@ a{
 .btn:hover{
     background:#6f5f4e;
 }
-

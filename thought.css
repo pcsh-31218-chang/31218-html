@@ -4,8 +4,9 @@
     font-family: 'Iansui-Regular';
     src: url('./fonts/Iansui-Regular.ttf') format('truetype');
 }
+
 /* ===== 全域 ===== */
-body{
+body {
     margin: 0;
     background-color: rgb(249, 247, 243);
     color: rgb(65, 39, 24);
@@ -13,78 +14,124 @@ body{
 }
 
 /* ===== 版面置中 ===== */
-.container{
-    width: 70%;
-    margin: 60px auto;
+.container {
+    width: 1240px;
+    margin: 60px auto 50px;
 }
 
-/* ===== 卡片 ===== */
-.card{
-    background: #ffffff;
-    padding: 50px 60px;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+/* ===== 主要內容卡片 ===== */
+main {
+    width: 1100px;
+    margin: 0 auto 50px;
+    background-color: rgb(255, 254, 253);
+    padding: 22px 72px 48px 72px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
 }
 
-/* ===== 標題區 ===== */
-.page-header h1{
-    font-size: 34px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+/* ===== 文章大標題 ===== */
+article h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
 
-.subtitle{
+.postdate {
+    margin-bottom: 20px;
+}
+
+/* ===== 副標題 ===== */
+.subtitle {
+    font-size: 16px;
     color: #8c7b68;
-    font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    margin-top: 4px;
 }
 
-/* ===== 文章區塊 ===== */
-.section{
-    margin-bottom: 40px;
+/* ===== section 區塊 ===== */
+article section {
+    margin-bottom: 50px;
+    padding-bottom: 36px;
+    border-bottom: 1px dashed rgb(200, 190, 178);
 }
 
-.section h3{
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(118,102,84,0.3);
+article section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 32px;
 }
 
-/* ===== 內文 ===== */
-p{
+/* ===== h3 小標題 ===== */
+article section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(90, 67, 48);
+    border-bottom: 2px solid #766c68;
+    margin-bottom: 20px;
+    background-image: url(9.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 20px 10px 10px 48px;
+}
+
+/* ===== 內文段落 ===== */
+article section p {
     line-height: 1.9;
-    font-size: 15px;
-    color: rgb(90, 70, 50);
-    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(80, 57, 38);
+    margin-bottom: 16px;
 }
 
-/* ===== 引言（強調句） ===== */
-.quote{
+/* ===== 引言強調句 ===== */
+.quote {
     text-align: center;
+    font-size: 20px;
     font-style: italic;
-    margin: 20px 0;
     color: #6f5f4e;
+    background-color: rgb(245, 242, 236);
+    border-left: 4px solid rgb(153, 138, 116);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 24px;
+    margin: 20px 0;
 }
 
 /* ===== 按鈕區 ===== */
-.btn-area{
+.btn-area {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 12px;
 }
 
-/* ===== 按鈕 ===== */
-.btn{
-    display:inline-block;
-    padding:10px 22px;
-    background:#8c7b68;
-    color:white;
-    text-decoration:none;
-    border-radius:20px;
-    font-size:14px;
-    transition:0.3s;
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #8c7b68;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-.btn:hover{
-    background:#6f5f4e;
+.btn:hover {
+    background: #6f5f4e;
+}
+
+/* ===== 底部 ===== */
+footer {
+    background-color: #523f2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    list-style: none;
 }
