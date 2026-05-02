@@ -1,10 +1,22 @@
 @charset "utf-8";
-
+/* 這才是原先的內容，但為了讓網站字體跑更快，我用claude.ai的幫助把字體壓縮了，並且改成woff2格式了，所以就把原本的註解掉了 */
+/* 
 @font-face {
     font-family: 'Iansui-Regular';
-    src: url('./fonts/Iansui-Regular.ttf') format('truetype');
+    src: url('./fonts/Iansui-Regular.ttf') format('truetype'); */
+@font-face {
+    font-family: 'Iansui-Regular';
+    src: url('./fonts/Iansui-Regular.woff2') format('woff2'),
+         url('./fonts/Iansui-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'ChenYuluoyan';
+    src: url('./fonts/ChenYuluoyan-Thin-Monospaced.woff2') format('woff2'),
+         url('./fonts/ChenYuluoyan-Thin-Monospaced.ttf') format('truetype');
+    font-display: swap;
+}
 /* 整個網頁可見部分 */
 body{
     background-color: rgb(249, 247, 243);
